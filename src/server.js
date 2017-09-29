@@ -25,6 +25,7 @@ import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
 import { setRuntimeVariable } from './actions/runtime';
 import config from './config';
+import apiWrapper from './apiWrapper';
 
 const app = express();
 
@@ -46,6 +47,8 @@ app.use(bodyParser.json());
 if (__DEV__) {
   app.enable('trust proxy');
 }
+
+app.use('/api', apiWrapper);
 
 //
 // Register server-side rendering middleware
