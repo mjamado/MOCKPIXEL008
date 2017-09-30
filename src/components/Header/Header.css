@@ -14,22 +14,32 @@
 }
 
 .root {
-  background: #373277;
-  color: #fff;
+  background: #ffffff;
 }
 
 .container {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0;
   max-width: var(--max-content-width);
-}
+  display: flex;
 
-.brand {
-  color: color(var(--brand-color) lightness(+10%));
-  text-decoration: none;
-  font-size: 1.75em; /* ~28px */
-}
+  & a {
+    display: block;
+  }
 
-.brandTxt {
-  margin-left: 10px;
+  & img {
+    height: 3em;
+  }
+
+  & :nth-child(1) {
+    flex-grow: 3;
+  }
+
+  & :nth-child(2) {
+    flex-grow: 1;
+  }
+
+  & :nth-child(3) {
+    flex-grow: 1;
+  }
 }

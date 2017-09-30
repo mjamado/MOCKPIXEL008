@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 180 180"
+   version="1.1"
+   sodipodi:docname="securityOff.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>icons</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
+     id="namedview17"
+     showgrid="false"
+     inkscape:zoom="1.3111111"
+     inkscape:cx="89.618644"
+     inkscape:cy="90"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#fff;}</style>
+  </defs>
+  <title
+     id="title6">icons</title>
+  <circle
+     cx="90.03"
+     cy="90.95"
+     r="45.2"
+     id="circle8"
+     style="fill:#ff0000;fill-opacity:1" />
+  <path
+     class="cls-1"
+     d="M87.15,97.44v13.27H79.39V73.06H94.08a17,17,0,0,1,7.46,1.55,11.44,11.44,0,0,1,5,4.41,12.3,12.3,0,0,1,1.73,6.5,10.81,10.81,0,0,1-3.79,8.73Q100.65,97.45,94,97.44Zm0-6.28h6.93a6.8,6.8,0,0,0,4.69-1.45,5.26,5.26,0,0,0,1.62-4.13,6.21,6.21,0,0,0-1.63-4.47,6.09,6.09,0,0,0-4.5-1.76H87.15Z"
+     id="path10" />
+  <path
+     d="M13.69,89.36A85.67,85.67,0,0,1,17.09,65a64.19,64.19,0,0,1,10-20.46q6.64-8.9,14.4-12.36l3.13,8.71q-8.15,6-12.73,18.65T27.37,89v1.73q0,16.91,4.52,29.59t12.78,18.92l-3.13,8.54q-7.59-3.41-14.15-12a63.17,63.17,0,0,1-10-19.9,85.11,85.11,0,0,1-3.68-23.56Z"
+     id="path12"
+     style="fill:#ff0000;fill-opacity:1" />
+  <path
+     d="M166.31,90.64a81.28,81.28,0,0,1-3.63,24.28,65.91,65.91,0,0,1-10.44,20.6q-6.81,8.93-14.57,12.28l-3.13-8.54q7.93-6,12.5-18.42T151.8,92.2v-3q0-16.69-4.55-29.42t-12.7-19.09l3.13-8.54q7.59,3.29,14.32,11.94a65.12,65.12,0,0,1,10.44,20.15,80.76,80.76,0,0,1,3.88,23.84Z"
+     id="path14"
+     style="fill:#ff0000;fill-opacity:1" />
+</svg>

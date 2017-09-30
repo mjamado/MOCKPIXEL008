@@ -9,23 +9,68 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import { compose } from 'redux';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
+import { setDoorsLockState } from '../../actions/smart';
+import lockedIcon from './icon-locked-180.svg';
+import unlockedIcon from './icon-unlocked-180.svg';
+import lightIcon from './icon-light-180.svg';
+
 import s from './Footer.css';
-import Link from '../Link';
 
 class Footer extends React.Component {
+  onDoorsClicked = () => {
+    fetch(`/api/${this.props.doorsLocked ? 'unlock' : 'lock'}`, {
+      headers: {
+        accept: 'application/json',
+      },
+    }).then(() => {
+      this.props.onSetDoorsLocked(!this.props.doorsLocked);
+    });
+  };
+
+  onBlinkClicked = () => {
+    fetch(`/api/blink`, {
+      headers: {
+        accept: 'application/json',
+      },
+    }).then(() => {
+      // okidoki
+    });
+  };
+
   render() {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <span className={s.text}>© Mercedes Thingy</span>
-          <span className={s.spacer}>·</span>
-          <Link className={s.link} to="/">
-            Home
-          </Link>
+          <img
+            src={this.props.doorsLocked ? unlockedIcon : lockedIcon}
+            alt="Lock/Unlock"
+            onClick={this.onDoorsClicked}
+          />
+          <img src={lightIcon} alt="Blink" onClick={this.onBlinkClicked} />
         </div>
       </div>
     );
   }
 }
 
-export default withStyles(s)(Footer);
+Footer.propTypes = {
+  doorsLocked: PropTypes.bool.isRequired,
+  onSetDoorsLocked: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = state => ({
+  doorsLocked: state.smart.doors.locked,
+});
+
+const mapActionsToProps = {
+  onSetDoorsLocked: setDoorsLockState,
+};
+
+export default compose(
+  withStyles(s),
+  connect(mapStateToProps, mapActionsToProps),
+)(Footer);

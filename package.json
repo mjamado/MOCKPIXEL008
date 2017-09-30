@@ -20,6 +20,7 @@
     "cookie-parser": "^1.4.3",
     "core-js": "^2.4.1",
     "express": "^4.15.3",
+    "google-map-react": "^0.24.0",
     "history": "^4.6.3",
     "isomorphic-style-loader": "^4.0.0",
     "jsonwebtoken": "^7.4.1",
@@ -27,6 +28,9 @@
     "normalize.css": "^7.0.0",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-each": "^0.10.0",
+    "postcss-mixins": "^6.1.1",
     "pretty-error": "^2.1.1",
     "prop-types": "^15.5.10",
     "query-string": "^5.0.0",
@@ -169,7 +173,6 @@
     ]
   },
   "scripts": {
-    "precommit": "lint-staged",
     "lint-js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "lint-css": "stylelint \"src/**/*.{css,less,scss,sss}\"",
     "lint": "yarn run lint-js && yarn run lint-css",

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 256 256"
+   version="1.1"
+   sodipodi:docname="gps.svg"
+   width="256"
+   height="256"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>gps</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="1.84375"
+     inkscape:cx="275.10824"
+     inkscape:cy="82.654849"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <title
+     id="title2">gps</title>
+  <g
+     id="g14"
+     transform="translate(-165.51,-199.00277)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path4"
+       d="m 293.5,208.44 a 87.4,87.4 0 0 0 -87.3,87.3 85.14,85.14 0 0 0 7.63,35.64 c 21.83,47.76 63.67,98.19 76,112.5 a 4.86,4.86 0 0 0 7.36,0 c 12.3,-14.32 54.15,-64.74 76,-112.5 a 85.14,85.14 0 0 0 7.63,-35.64 87.41,87.41 0 0 0 -87.31,-87.3 z m 0,132.65 a 45.35,45.35 0 1 1 45.35,-45.35 45.4,45.4 0 0 1 -45.35,45.35 z m 0,0" />
+  </g>
+</svg>

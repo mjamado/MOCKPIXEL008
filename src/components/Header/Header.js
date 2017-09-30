@@ -11,25 +11,23 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.css';
 import Link from '../Link';
-import Navigation from '../Navigation';
-import logoUrl from './logo-small.png';
-import logoUrl2x from './logo-small@2x.png';
+import logoUrl from './logo.svg';
+import gps from './gps.svg';
+import security from './security.svg';
 
 class Header extends React.Component {
   render() {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <Navigation />
-          <Link className={s.brand} to="/">
-            <img
-              src={logoUrl}
-              srcSet={`${logoUrl2x} 2x`}
-              width="38"
-              height="38"
-              alt="React"
-            />
-            <span className={s.brandTxt}>Mercedes Thingy</span>
+          <Link to="/">
+            <img src={logoUrl} alt="mysmart status" />
+          </Link>
+          <Link to="/location">
+            <img src={gps} alt="mysmart location" />
+          </Link>
+          <Link to="/parking">
+            <img src={security} alt="mysmart security" />
           </Link>
         </div>
       </div>

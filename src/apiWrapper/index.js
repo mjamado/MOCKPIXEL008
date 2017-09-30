@@ -5,6 +5,7 @@ import pemFile from './certs/pixelcamp.pem';
 
 const router = express.Router();
 const vin = 'MOCKPIXEL008';
+// const vin = 'WME4534441K237532';
 const apiEndpoint = 'https://api.prod.smartservices.car2go.com/vega/';
 
 const options = {
@@ -70,6 +71,19 @@ router.get('/lock', (req, res) => {
       ...options,
       method: 'PUT',
       uri: `${apiEndpoint}vehicles/${vin}/doors/lock`,
+    },
+    () => {
+      res.json({ status: true });
+    },
+  );
+});
+
+router.get('/blink', (req, res) => {
+  request(
+    {
+      ...options,
+      method: 'PUT',
+      uri: `${apiEndpoint}vehicles/${vin}/blink`,
     },
     () => {
       res.json({ status: true });
@@ -160,7 +174,25 @@ router.get('/antitheftOff', (req, res) => {
       uri: `${apiEndpoint}vehicles/${vin}/geofences/${fenceId}`,
     },
     () => {
-      res.json({ status: true });
+      res.json({ fenceId: '' });
+    },
+  );
+});
+
+router.get('/activeFence', (req, res) => {
+  request(
+    {
+      ...options,
+      method: 'GET',
+      uri: `${apiEndpoint}vehicles/${vin}/geofences`,
+    },
+    (err, resp, body) => {
+      const ret = JSON.parse(body);
+      if (ret.length > 0) {
+        res.json({ fenceId: ret[0].id, points: ret[0].polygons[0].points });
+      } else {
+        res.json({ fenceId: '' });
+      }
     },
   );
 });

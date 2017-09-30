@@ -9,16 +9,15 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Page from '../../components/Page';
-import about from './about.md';
+import Location from './Location';
 
 function action() {
   return {
-    chunks: ['about'],
-    title: about.title,
+    chunks: ['location'],
+    title: 'mysmart - Location',
     component: (
       <Layout>
-        <Page {...about} />
+        <Location />
       </Layout>
     ),
   };

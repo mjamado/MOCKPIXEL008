@@ -46,10 +46,15 @@ class Html extends React.Component {
           </title>
           <meta name="description" content={description} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#ffc800" />
+          <link rel="icon" href="icon-256.png" sizes="256x256" />
+          <link rel="icon" href="icon-128.png" sizes="128x128" />
+          <link rel="icon" href="icon-64.png" sizes="64x64" />
           {scripts.map(script =>
             <link key={script} rel="preload" href={script} as="script" />,
           )}
           <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+          <link rel="manifest" href="manifest.json" />
           {styles.map(style =>
             <style
               key={style.id}
@@ -59,7 +64,11 @@ class Html extends React.Component {
           )}
         </head>
         <body>
-          <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
+          <div
+            id="app"
+            style={{ height: '100%' }}
+            dangerouslySetInnerHTML={{ __html: children }}
+          />
           <script
             dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }}
           />
