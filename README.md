@@ -18,6 +18,7 @@ mysmart
     - [joanarijodesign@gmail.com](mailto:joanarijodesign@gmail.com)
     - [@joanarijo](https://twitter.com/joanarijo)
   - Afonso Muralha
+    - [afonsomuralha@gmail.com](mailto:afonsomuralha@gmail.com)
     - [@af0nsus](https://twitter.com/af0nsus)
 
 ## Project Description
@@ -61,7 +62,13 @@ Because of the constraints inherent to an hackathon and it's limited time, a lot
 - On that note, API access was naively done: we're fetching status and location every half a second. Honestly, we should've been banned from the API for doing that. We should've ping the `events` endpoint instead and act accordingly. Again, the hackathon time constraints contributed for this bad practice;
 - On bad practices, don't run `yarn test`, `yarn lint` or any other of the analysis commands - it was not on our list of concerns. Our only concern was that it worked;
 - We had a list of features that we would like the API to have. We understand that this API was made for a specific service (car2go), but we're wishing a *fashion* car like the **smart** eventually has access to a more fullblown API. Following are a list of feature we would've liked to see:
-  - *stuff*
+  - The range of the car;
+  - Average fuil consumption;
+  - Climate control;
+  - Radio/Media dashboard control;
+  - Vehicle instrumentation panel mirroring;
+  - Integration with webservices (or allow developers to do the integration), such as IFTTT;
+  - Integration with smart devices and homes (eg. NEST);
 
 ## Feedback
 
