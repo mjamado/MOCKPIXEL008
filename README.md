@@ -63,7 +63,7 @@ Because of the constraints inherent to an hackathon and it's limited time, a lot
 - On bad practices, don't run `yarn test`, `yarn lint` or any other of the analysis commands - it was not on our list of concerns. Our only concern was that it worked;
 - We had a list of features that we would like the API to have. We understand that this API was made for a specific service (car2go), but we're wishing a *fashion* car like the **smart** eventually has access to a more fullblown API. Following are a list of feature we would've liked to see:
   - The range of the car;
-  - Average fuil consumption;
+  - Average full consumption;
   - Climate control;
   - Radio/Media dashboard control;
   - Vehicle instrumentation panel mirroring;
